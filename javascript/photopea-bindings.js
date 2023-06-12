@@ -58,7 +58,7 @@ function goToImg2ImgInpaintUpload(onFinished) {
     const img2imgdiv = gradioApp().getElementById("mode_img2img");
 
     waitForWebUiUpdate(img2imgdiv).then(() => {
-        const allButtons = img2imgdiv.querySelectorAll("div.tab-nav > button");
+        const allButtons = img2imgdiv.querySelectorAll("div > button");
         const inpaintButton =
             Array.from(allButtons).find(button => button.textContent === 'Inpaint upload ');
         inpaintButton.click();
